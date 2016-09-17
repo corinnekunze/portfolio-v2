@@ -1,0 +1,77 @@
+// =======================
+// Colors
+// =======================
+
+$white: #fff;
+$black: #333;
+$link: #007a86;
+$pink: #B7259D;
+$gray: #F2F2F2;
+$dark-gray: #594F4F;
+$text-color: #1F1724;
+
+$aqua: #45ADA8;
+$lime: #E5FCC2;
+$green: #9DE0AD;
+
+// =======================
+// Fonts
+// =======================
+
+$roboto: 'Roboto', sans-serif;
+$varela: 'Varela Round', sans-serif;
+
+.varela {
+  font-family: $varela;
+}
+
+.roboto {
+  font-family: $roboto;
+}
+
+// =======================
+// Breakpoints
+// =======================
+$sm-breakpoint: 544px;
+$md-breakpoint: 992px;
+$lg-breakpoint: 1200px;
+
+// =======================
+// Icons
+// =======================
+
+// @font-face {
+//  font-family: 'sc-icons';
+//  src:url('fonts/sc-icons.eot?');
+//  src:url('fonts/sc-icons.eot?#iefix') format('embedded-opentype'),
+//    url('fonts/sc-icons.woff') format('woff'),
+//    url('fonts/sc-icons.ttf') format('truetype'),
+//    url('fonts/sc-icons.svg?#sc-icons') format('svg');
+//  display: inline-block;
+//  font-weight: normal;
+//  font-style: normal;
+// }
+
+// [class^="icon-"], [class*=" icon-"], .icon {
+//  display: inline-block;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//  font-family: 'sc-icons';
+//  font-style: normal;
+//  font-weight: normal;
+//  font-variant: normal;
+//  line-height: 1;
+//  position: relative;
+//  speak: none;
+//  text-transform: none;
+//  &.left-side:before {
+//    margin-right: 20px;
+//  }
+//  &.right-side:before {
+//    margin-left: 20px;
+//  }
+// }
+
+// .icon-example:before {
+//  content: "\e607";
+// }
