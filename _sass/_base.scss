@@ -1,6 +1,10 @@
 // ===============
 // Typography
 // ===============
+* {
+	font-family: $source-sans;
+	line-height: 1.4;
+}
 
 .font--white {
 	color: $white;
@@ -30,58 +34,73 @@ h6, .h6 {
 }
 
 p, .p {
-	font-size: 12px;
+	font-size: 16px;
 }
 // ===============
 // Site Styles
 // ===============
-.background--black {
+body {
 	background-color: $black;
+}
+.background--white {
+	background-color: $white;
 }
 .section {
 	height: 100vh;
 	position: relative;
 }
 // ===============
-// Header
+//	Special FX
 // ===============
-header {
-	background-color: $black;
-	color: $white;
+
+// SOURCE: https://css-tricks.com/glitch-effect-text-images-svg/
+@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
+
+  color: $textColor;
+  position: relative;
+  $steps: $intensity;
+
+  // Ensure the @keyframes are generated at the root level
+  @at-root {
+    // We need two different ones
+    @for $i from 1 through 2 {
+      @keyframes #{$name}-anim-#{$i} {
+        @for $i from 0 through $steps {
+          #{percentage($i*(1/$steps))} {
+            clip: rect(
+              random($height)+px,
+              $width+px,
+              random($height)+px,
+              0
+            );
+          }
+        }
+      }
+    }
+  }
+  &:before,
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $background;
+    clip: rect(0, 0, 0, 0);
+  }
+  &:after {
+    left: 4px;
+    text-shadow: -1px 0 $highlightColor1;
+    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+  }
+  &:before {
+    left: -4px;
+    text-shadow: 2px 0 $highlightColor2;
+    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+  }
 }
-// ===============
-// Introduction
-// ===============
-.introduction--code {
-	padding-top: 200px;
-}
-.line-animation {
-	width: 100%;
-	height:5px;
-	border-bottom: 3px solid $white;
-	animation-duration: 2.5s;
-	animation-name: oldmonitor;
-	position: absolute;
-	top: 100%;
-	&:before {
-		content: "";
-		width: 100%;
-		border-bottom: 1px solid $white;
-		animation-duration: 1.5s;
-		animation-name: oldmonitor2;
-		animation-iteration-count: infinite;
-		position: absolute;
-	}
-	&:after {
-		content: "";
-		width: 100%;
-		height:3px;
-		border-bottom: 1px solid $white;
-		animation-duration: 0.5s;
-		animation-name: oldmonitor2;
-		animation-iteration-count: infinite;
-		position: absolute;
-	}
+.--glitch {
+	@include textGlitch("introduction--code", 17, $white, $black, red, blue, 450, 115);
 }
 
 @keyframes oldmonitor {
@@ -93,12 +112,64 @@ header {
 	}
 }
 @keyframes oldmonitor2 {
-	from {
-		top: 0%;
+	0% {
+		top: 100%;
+		opacity: 0;
+	}
+	50% {
+		top: 100%;
 		opacity: 1;
 	}
-	to {
+	100% {
 		top: 500%;
 		opacity: 0;
 	}
+}
+// ===============
+// Header
+// ===============
+header {
+	color: $white;
+	&:after {
+		content: "";
+		border-right: 1px solid $white;
+		position: absolute;
+		height: 30px;
+		left: 50%;
+		top: 100%;
+	}
+}
+// ===============
+// Introduction
+// ===============
+.introduction--spacing {
+	margin-top: 200px;
+}
+.line-animation {
+	width: 100%;
+	height:0px;
+	top: 100%;
+	position: absolute;
+	// animation-duration: 2.5s;
+	// animation-name: oldmonitor;
+	// top: 100%;
+	// &:before {
+	// 	content: "";
+	// 	width: 100%;
+	// 	border-bottom: 1px solid $white;
+	// 	animation-duration: 3.5s;
+	// 	animation-name: oldmonitor2;
+	// 	animation-iteration-count: infinite;
+	// 	position: absolute;
+	// }
+	// &:after {
+	// 	content: "";
+	// 	width: 100%;
+	// 	height:3px;
+	// 	border-bottom: 1px solid $white;
+	// 	animation-duration: .5s;
+	// 	animation-name: oldmonitor2;
+	// 	animation-iteration-count: infinite;
+	// 	position: absolute;
+	// }
 }
