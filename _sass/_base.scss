@@ -1,1 +1,47 @@
-// Base scss file
+// ===============
+// Typography
+// ===============
+
+.font--white {
+	color: $white;
+}
+h1, .h1 {
+	font-size: 40px;
+}
+
+h2, .h2 {
+	font-size: 36px;
+}
+
+h3, .h3 {
+	font-size: 26px;
+}
+
+h4, .h4 {
+	font-size: 24px;
+}
+
+h5, .h5 {
+	font-size: 22px;
+}
+
+h6, .h6 {
+	font-size: 18px;
+}
+
+p, .p {
+	font-size: 12px;
+}
+// ===============
+// Site Styles
+// ===============
+.background--black {
+	background-color: $black;
+}
+// ===============
+// Header
+// ===============
+header {
+	background-color: $black;
+	color: $white;
+}

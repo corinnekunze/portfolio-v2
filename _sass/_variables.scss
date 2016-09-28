@@ -3,30 +3,22 @@
 // =======================
 
 $white: #fff;
-$black: #333;
-$link: #007a86;
-$pink: #B7259D;
-$gray: #F2F2F2;
-$dark-gray: #594F4F;
-$text-color: #1F1724;
-
-$aqua: #45ADA8;
-$lime: #E5FCC2;
-$green: #9DE0AD;
+$black: #414040;
 
 // =======================
 // Fonts
 // =======================
+@import 'https://fonts.googleapis.com/css?family=Audiowide|Source+Sans+Pro:400,600';
 
-$roboto: 'Roboto', sans-serif;
-$varela: 'Varela Round', sans-serif;
+$audiowide: 'Audiowide', cursive;
+$source-sans: 'Source Sans', sans-serif;
 
-.varela {
-  font-family: $varela;
+.audiowide {
+  font-family: $audiowide;
 }
 
-.roboto {
-  font-family: $roboto;
+.source-sans {
+  font-family: $source-sans;
 }
 
 // =======================
