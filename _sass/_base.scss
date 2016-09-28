@@ -38,10 +38,20 @@ p, .p {
 .background--black {
 	background-color: $black;
 }
+.section {
+	height: 100vh;
+	position: relative;
+}
 // ===============
 // Header
 // ===============
 header {
 	background-color: $black;
 	color: $white;
+}
+// ===============
+// Introduction
+// ===============
+.introduction--code {
+	padding-top: 200px;
 }
