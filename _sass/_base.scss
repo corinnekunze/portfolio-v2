@@ -55,3 +55,50 @@ header {
 .introduction--code {
 	padding-top: 200px;
 }
+.line-animation {
+	width: 100%;
+	height:5px;
+	border-bottom: 3px solid $white;
+	animation-duration: 2.5s;
+	animation-name: oldmonitor;
+	position: absolute;
+	top: 100%;
+	&:before {
+		content: "";
+		width: 100%;
+		border-bottom: 1px solid $white;
+		animation-duration: 1.5s;
+		animation-name: oldmonitor2;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+	&:after {
+		content: "";
+		width: 100%;
+		height:3px;
+		border-bottom: 1px solid $white;
+		animation-duration: 0.5s;
+		animation-name: oldmonitor2;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+}
+
+@keyframes oldmonitor {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes oldmonitor2 {
+	from {
+		top: 0%;
+		opacity: 1;
+	}
+	to {
+		top: 500%;
+		opacity: 0;
+	}
+}
