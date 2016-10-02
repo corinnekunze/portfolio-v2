@@ -39,6 +39,13 @@ h6, .h6 {
 p, .p {
 	font-size: 16px;
 }
+
+a {
+	color: $blue;
+	&:hover {
+		color: $white;
+	}
+}
 // ===============
 // Site Styles
 // ===============
@@ -53,6 +60,20 @@ body {
 	height: 100vh;
 	position: relative;
 }
+.highlight {
+	position: relative;
+	font-weight: 700;
+	&:after {
+		content: "";
+		background-color: $blue;
+		position: absolute;
+    width: 102%;
+    top: 50%;
+    height: 50%;
+    left: -2px;
+    z-index: -1;
+	}
+}
 // ===============
 //	Special FX
 // ===============
@@ -63,82 +84,6 @@ body {
 .is-finished {
 	opacity: 1;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
-// SOURCE: https://css-tricks.com/glitch-effect-text-images-svg/
-@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
-
-  color: $textColor;
-  position: relative;
-  $steps: $intensity;
-
-  // Ensure the @keyframes are generated at the root level
-  @at-root {
-    // We need two different ones
-    @for $i from 1 through 2 {
-      @keyframes #{$name}-anim-#{$i} {
-        @for $i from 0 through $steps {
-          #{percentage($i*(1/$steps))} {
-            clip: rect(
-              random($height)+px,
-              $width+px,
-              random($height)+px,
-              0
-            );
-          }
-        }
-      }
-    }
-  }
-  &:before,
-  &:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: $background;
-    clip: rect(0, 0, 0, 0);
-  }
-  &:after {
-    left: 4px;
-    text-shadow: -1px 0 $highlightColor1;
-    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-  &:before {
-    left: -4px;
-    text-shadow: 2px 0 $highlightColor2;
-    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-}
-.--glitch {
-	@include textGlitch("introduction--code", 17, $white, $black, red, blue, 450, 115);
-}
-
-@keyframes oldmonitor {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-@keyframes oldmonitor2 {
-	0% {
-		top: 100%;
-		opacity: 0;
-	}
-	50% {
-		top: 100%;
-		opacity: 1;
-	}
-	100% {
-		top: 500%;
-		opacity: 0;
-	}
 }
 // ===============
 // Header
@@ -155,38 +100,10 @@ header {
 	}
 }
 // ===============
-// Introduction
+// Page Styles
 // ===============
 .introduction {
 	margin-top: 250px;
-}
-.line-animation {
-	width: 100%;
-	height:0px;
-	top: 100%;
-	position: absolute;
-	// animation-duration: 2.5s;
-	// animation-name: oldmonitor;
-	// top: 100%;
-	// &:before {
-	// 	content: "";
-	// 	width: 100%;
-	// 	border-bottom: 1px solid $white;
-	// 	animation-duration: 3.5s;
-	// 	animation-name: oldmonitor2;
-	// 	animation-iteration-count: infinite;
-	// 	position: absolute;
-	// }
-	// &:after {
-	// 	content: "";
-	// 	width: 100%;
-	// 	height:3px;
-	// 	border-bottom: 1px solid $white;
-	// 	animation-duration: .5s;
-	// 	animation-name: oldmonitor2;
-	// 	animation-iteration-count: infinite;
-	// 	position: absolute;
-	// }
 }
 .introduction--headline {
 	position: relative;
