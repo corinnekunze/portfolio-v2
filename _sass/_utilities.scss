@@ -156,19 +156,19 @@ b {
 // Borders
 
 .border--all {
-  border: 1px solid #ccc;
+  border: 1px solid $black;
 }
 .border--bottom {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $black;
 }
 .border--top {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $black;
 }
 .border--right {
-  border-right: 1px solid #ccc;
+  border-right: 1px solid $black;
 }
 .border--left {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid $black;
 }
 
 // Spacing Utilities
