@@ -4,13 +4,16 @@
 * {
 	font-family: $source-sans;
 	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .font--white {
 	color: $white;
 }
 h1, .h1 {
-	font-size: 40px;
+	font-size: 62px;
+	line-height: 1;
 }
 
 h2, .h2 {
@@ -40,7 +43,8 @@ p, .p {
 // Site Styles
 // ===============
 body {
-	background-color: $black;
+	background: url("/assets/images/oregonwood-dark.jpg") no-repeat center center fixed;
+	background-size: cover;
 }
 .background--white {
 	background-color: $white;
@@ -52,7 +56,14 @@ body {
 // ===============
 //	Special FX
 // ===============
-
+.js-fade {
+	opacity: 0;
+	@include transition(opacity, 1s, ease);
+}
+.is-finished {
+	opacity: 1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
 // SOURCE: https://css-tricks.com/glitch-effect-text-images-svg/
 @mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
 
@@ -92,11 +103,15 @@ body {
     left: 4px;
     text-shadow: -1px 0 $highlightColor1;
     animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
   }
   &:before {
     left: -4px;
     text-shadow: 2px 0 $highlightColor2;
     animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
   }
 }
 .--glitch {
@@ -142,8 +157,8 @@ header {
 // ===============
 // Introduction
 // ===============
-.introduction--spacing {
-	margin-top: 200px;
+.introduction {
+	margin-top: 250px;
 }
 .line-animation {
 	width: 100%;
@@ -172,4 +187,21 @@ header {
 	// 	animation-iteration-count: infinite;
 	// 	position: absolute;
 	// }
+}
+.introduction--headline {
+	position: relative;
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		margin-top: -1px;
+		border-bottom: 1px solid $gray;
+		width: 52%;
+	}
+	&:before {
+		left: -53%;
+	}
+	&:after {
+		right: -53%;
+	}
 }
