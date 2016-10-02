@@ -99,22 +99,26 @@ body {
 // ===============
 // Header
 // ===============
-header {
+.header {
+	@include transition(all, 0.2s, linear);
 	color: $white;
-	&:after {
-		content: "";
-		border-right: 1px solid $white;
-		position: absolute;
-		height: 30px;
-		left: 50%;
-		top: 100%;
-	}
+	background-color: rgba(black, 0.8);
+	position: fixed;
+	top: -40px;
+	width: 100%;
+	opacity: 0;
+	z-index: 2;
+}
+.up {
+	opacity: 1;
+	background-color: rgba(black, 0.8);
+	top: 0px;
 }
 // ===============
 // Page Styles
 // ===============
 .introduction {
-	margin-top: 250px;
+	padding-top: 250px;
 }
 .introduction--headline {
 	position: relative;
