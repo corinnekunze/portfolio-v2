@@ -41,11 +41,11 @@ $(function() {
       }
       else if (curPos > this.scrollPos && curPos > this.navHeight) {
         // scroll down
-        $('.header').addClass('inactive').removeClass('up');
+        $('.header').addClass('up');
       }
       else {
         // scroll up
-        $('.header').addClass('up');
+        $('.header').removeClass('up');
       }
 
       this.scrollPos = curPos;
