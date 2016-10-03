@@ -124,8 +124,9 @@ hr {
 // ===============
 .header {
 	@include transition(all, 0.2s, linear);
-	color: $white;
-	background-color: black;
+	background-color: $white;
+	border-bottom: 1px solid #ccc;
+	color: $black;
 	position: fixed;
 	top: -40px;
 	width: 100%;
