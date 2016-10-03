@@ -103,11 +103,21 @@ hr {
 // ===============
 .js-fade {
 	opacity: 0;
-	@include transition(opacity, 1s, ease);
+	@include transition(opacity, 2s, ease);
 }
 .is-finished {
 	opacity: 1;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+@keyframes hover {
+	from {
+		// top: 0;
+		opacity: 1;
+	}
+	to {
+		// top: 8px;
+		opacity: .5;
+	}
 }
 // ===============
 // Header
@@ -147,5 +157,25 @@ hr {
 	}
 	&:after {
 		right: -53%;
+	}
+}
+.arrow-down {
+	@include transition(top, 0.2s, linear);
+	animation: hover 900ms infinite;
+	animation-direction: alternate;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	position: relative;
+	margin-top: 40px;
+	font-size: 18px;
+	position: absolute;
+	width: 100%;
+	top: 85%;
+	&:after {
+		content: "\f103";
+		color: $white;
+		position: absolute;
+		top: 5px;
+		left: 0;
 	}
 }
