@@ -142,7 +142,7 @@ hr {
 	}
 	to {
 		// top: 8px;
-		opacity: .5;
+		opacity: .4;
 	}
 }
 // ===============
@@ -151,7 +151,7 @@ hr {
 .header {
 	@include transition(all, 0.2s, linear);
 	@extend %background--black;
-	border-bottom: 1px solid $blue;
+	border-bottom: 1px solid rgba($neon, 0.7);
 	color: $white;
 	position: fixed;
 	top: -40px;
