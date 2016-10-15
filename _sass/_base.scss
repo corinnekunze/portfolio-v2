@@ -54,7 +54,13 @@ a {
 .link--black {
 	color: $black;
 	&:hover {
-		color: black;
+		color: #000;
+	}
+}
+.link--aqua {
+	color: $aqua;
+	&:hover {
+		color: #000;
 	}
 }
 // ===============
@@ -67,6 +73,9 @@ body {
 .background--white {
 	background-color: $white;
 	position: relative;
+}
+.background--black, %background--black {
+	background-color: rgba(#000, 0.95);
 }
 .section {
 	height: 100vh;
@@ -120,13 +129,13 @@ hr {
 	}
 }
 // ===============
-// Header
+// Header & Footer
 // ===============
 .header {
 	@include transition(all, 0.2s, linear);
-	background-color: $white;
-	border-bottom: 1px solid #ccc;
-	color: $black;
+	@extend %background--black;
+	border-bottom: 1px solid $blue;
+	color: $white;
 	position: fixed;
 	top: -40px;
 	width: 100%;
@@ -136,6 +145,10 @@ hr {
 .up {
 	opacity: 1;
 	top: 0px;
+}
+footer {
+	@extend %background--black;
+	color: $white;
 }
 // ===============
 // Page Styles
@@ -170,12 +183,12 @@ hr {
 	margin-top: 40px;
 	font-size: 18px;
 	position: absolute;
+	text-align: center;
 	width: 100%;
 	top: 85%;
 	&:after {
 		content: "\f103";
 		color: $white;
-		position: absolute;
 		top: 5px;
 		left: 0;
 	}
