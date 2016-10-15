@@ -107,6 +107,23 @@ hr {
 		}
 	}
 }
+.effect--underline {
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		border-bottom: 1px solid #000;
+		@include transition(width, 0.2s, linear);
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
 // ===============
 //	Special FX
 // ===============
