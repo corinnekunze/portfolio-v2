@@ -1,5 +1,6 @@
 ---
 title: Oregonian Recipe Box
+order: 2
 site_url: http://recipes.oregonlive.com/
 display_url: recipes.oregonlive.com
 skills: Ruby on Rails, Javascript, Front-End Development, Schema

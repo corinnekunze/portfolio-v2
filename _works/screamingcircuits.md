@@ -1,5 +1,6 @@
 ---
 title: Screaming Circuits
+order: 1
 site_url: http://www.screamingcircuits.com
 display_url: www.screamingcircuits.com
 skills: Ember.js, Javascript, Front-End Development

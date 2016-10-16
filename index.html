@@ -55,7 +55,8 @@ and simplicity.</p>
 				<hr>
 			</div>
 		</div>
-		{% for work in site.works %}
+		{% assign portfolio = site.works | sort: 'order' %}
+		{% for work in portfolio %}
 			<div class="row margin-top-xl">
 				<div class="ten col-centered columns">
 					<h3 class="audiowide">{{work.title}}</h3>
