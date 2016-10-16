@@ -4,6 +4,12 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
+exclude: [vendor]
+# Collections
+collections: 
+  works:
+    output: true
+    permalink: /works/:path/
 
 # Site settings
 title: Corinne Kunze - Web Developer With An Eye for Design
@@ -17,7 +23,6 @@ github_username:  corinnekunze
 
 # Build settings
 markdown: kramdown
+markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 
-# Collections
-collections: 
-  works:
+
