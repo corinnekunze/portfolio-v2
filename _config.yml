@@ -15,7 +15,7 @@ collections:
 title: Corinne Kunze - Web Developer With An Eye for Design
 email: corinnekunze@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Corinne Kunze is a web developer who strives for a beautiful user experience as well as a beautiful and maintainable codebase.
+  Corinne Kunze is a web developer who strives to create beautiful user experiences as well as logical and maintainable codebases.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.corinnekunze.com" # the base hostname & protocol for your site
 twitter_username: corinnekunze
