@@ -7,7 +7,6 @@ $(function() {
     topContent: ($('.header').outerHeight() + $('.introduction').outerHeight()),
 
     init: function() {
-    	console.log('initialized!');
       this.watchScroll();
     },
 
@@ -41,11 +40,15 @@ $(function() {
       }
       else if (curPos > this.scrollPos && curPos > this.navHeight) {
         // scroll down
-        $('.header').addClass('up');
+        // $('.header').addClass('up');
+        $('.header').removeClass('up');
+        
       }
       else {
+        $('.header').addClass('up');
+
         // scroll up
-        $('.header').removeClass('up');
+        // $('.header').removeClass('up');
       }
 
       this.scrollPos = curPos;
@@ -56,6 +59,9 @@ $(function() {
 		$('.js-fade').addClass('is-finished');
 	}
 
+  $('.js-scroll-top').on('click', function() {
+    $("html, body").animate({ scrollTop: "0px" });
+  });
 	// Initalizers
 	navigation.init();
 });
