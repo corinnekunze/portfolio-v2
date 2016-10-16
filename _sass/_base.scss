@@ -17,26 +17,44 @@
 h1, .h1 {
 	font-size: 62px;
 	line-height: 1;
+	@media only screen and (max-width: $md-breakpoint) {
+		font-size: 30px;
+	}
 }
 
 h2, .h2 {
 	font-size: 36px;
+	@media only screen and (max-width: $md-breakpoint) {
+		font-size: 28px;
+	}
 }
 
 h3, .h3 {
 	font-size: 26px;
+	@media only screen and (max-width: $md-breakpoint) {
+		font-size: 20px;
+	}
 }
 
 h4, .h4 {
 	font-size: 24px;
+	@media only screen and (max-width: $md-breakpoint) {
+		font-size: 18px;
+	}
 }
 
 h5, .h5 {
 	font-size: 22px;
+	@media only screen and (max-width: $md-breakpoint) {
+		font-size: 18px;
+	}
 }
 
 h6, .h6 {
 	font-size: 18px;
+	@media only screen and (max-width: $md-breakpoint) {
+		font-size: 16px;
+	}
 }
 
 p, .p {
@@ -112,6 +130,7 @@ hr {
 	&:after {
 		content: "";
 		position: absolute;
+		top: 0;
 		left: 0;
 		width: 0%;
 		height: 100%;
@@ -188,6 +207,9 @@ footer {
 	}
 	&:after {
 		right: -53%;
+	}
+	@media only screen and (max-width: $md-breakpoint)    {
+		font-size: 30px;
 	}
 }
 .arrow-down {

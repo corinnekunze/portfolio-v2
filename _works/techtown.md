@@ -1,14 +1,14 @@
 ---
-title: Techtown Diversity Survey
+title: TechTown Diversity Survey
 order: 3
-site_url: http://recipes.oregonlive.com/
-display_url: recipes.oregonlive.com
-skills: Ruby on Rails, Javascript, Front-End Development, Schema
-paragraph_1: The Oregonian Recipe Box was a great project to work on, and it was sorely in need of a redesign. The Oregonian had been collecting recipes in their database for quite some time but users were not drawn to these recipes with no photos, poorly optimized search engine optimization, as well as a dated user interface.
-paragraph_2: I lead the Front-end Development efforts while working with the design and back-end development teams. Some of the major accomplishments for this project were putting together a custom CMS quickly, writing recipe schema to provide search engines with recipe data to drive traffic, and integrating a fully responsive user experience for filtering, viewing, and searching for recipes.
-hero_img: /assets/images/techtown-screenshot.jpg
-first_image: /assets/images/omg-home.jpg
-first_image_alt: Oregonian Recipe Box Homepage
-second_image: /assets/images/omg-recipe.jpg
-second_image_alt: Oregonian Recipe Box Recipe
+site_url: https://portlandtechdiversity-survey.herokuapp.com/
+display_url: portlandtechdiversity-survey.herokuapp.com
+skills: Javascript, Chartist.JS, Ruby, CSS Animation
+paragraph_1: The TechTown Diversity Survey is a project supported by the Portland Development Commission (PDC). This survey is the result of 23 tech companies, located in Portland, Oregon, who have taken the survey and shared their results as part of a <a href="https://jared-wiener.squarespace.com/diversity-letter" target="_blank" class="link--aqua effect--underline">pledge</a> to create a more diverse industry. The goal for the web project was to quickly put together a web site featuring the statistics using interactive charts.
+paragraph_2: This wasn't <a href="http://rails-hosting.com/2016/index.html" target="_blank" class="link--aqua effect--underline">my first time</a> working with charts and a large set of data to bring from a CSV to code. Learning from my past projects, I decided to write a Ruby program to parse the CSV file from the survey and collect users based on their selections throughout the survey. From there, the next steps were to take the collected data and generate the charts by formatting the data as Chartist.js was expecting it. Want to see more code for this project? It is now publicly available on <a href="https://github.com/planetargon/techtown-survey" target="_blank" class="link--aqua effect--underline"><i class="fa fa-github"></i> Github</a>.
+hero_img: /assets/images/techtown-ruby.jpg
+first_image: /assets/images/techtown-intro.jpg
+first_image_alt: TechTown Diversity Intro
+second_image: /assets/images/techtown-graphs.jpg
+second_image_alt: TechTown Diversity Graphs
 ---
