@@ -95,6 +95,9 @@ body {
 .background--black, %background--black {
 	background-color: rgba(#000, 0.95);
 }
+.background--gray {
+	background-color: rgba(#ccc, 0.2);
+}
 .section {
 	height: 100vh;
 	position: relative;
