@@ -1,8 +1,7 @@
 source "https://rubygems.org"
-ruby "2.0.0"
-
-gem 'jekyll', '~> 3.3'
-gem 'sinatra', '~> 1.4', '>= 1.4.7'
-gem 'thin', '~> 1.7'
-gem 'RedCloth', '~> 4.3', '>= 4.3.2'
-gem 'rack-jekyll', '~> 0.4.5'
+ruby '2.1.2'
+gem 'jekyll'
+gem 'kramdown'
+gem 'rack-jekyll'
+gem 'rake'
+gem 'puma'
