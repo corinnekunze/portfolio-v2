@@ -102,6 +102,10 @@ body {
 .section {
 	height: 100vh;
 	position: relative;
+	@media only screen and (max-width: $sm-breakpoint) {
+		height: auto;
+		margin-bottom: 60px;
+	}
 }
 hr {
 	margin: 5px 0px;
@@ -196,6 +200,9 @@ footer {
 // ===============
 .introduction {
 	padding-top: 250px;
+	@media only screen and (max-width: $sm-breakpoint) {
+		padding: 150px 0px;
+	}
 }
 .introduction--headline {
 	position: relative;
@@ -236,4 +243,24 @@ footer {
 		top: 5px;
 		left: 0;
 	}
+}
+.work--hero {
+	@media only screen and (max-width: $sm-breakpoint)    {
+		border: 1px solid #ccc;
+	}
+}
+// ===============
+// Skeleton Overrides
+// ===============
+// Unfortunately, skeleton loses its column widths for small media queries
+// Seems like a design oversight, but that's why it's overriden here.
+.container--for-medium {
+  @media only screen and (min-width: $md-breakpoint)    {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+  }  
+  .ten.columns {
+		width: 82.66667%;
+	}  
 }
