@@ -1,5 +1,6 @@
 ---
 title: Planet Argon Website
+target: planet-argon
 order: 4
 site_url: https://www.planetargon.com
 display_url: planetargon.com

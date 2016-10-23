@@ -87,6 +87,7 @@ a {
 body {
 	background: url("/assets/images/oregonwood-dark.jpg") no-repeat center center fixed;
 	background-size: cover;
+	overflow-x: hidden;
 }
 .background--white {
 	background-color: $white;
@@ -107,6 +108,7 @@ hr {
 }
 .highlight {
 	color: $white;
+	cursor: pointer;
 	position: relative;
 	font-weight: 700;
 	&:after {

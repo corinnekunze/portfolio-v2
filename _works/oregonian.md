@@ -1,5 +1,6 @@
 ---
 title: Oregonian Recipe Box
+target: oregonian
 order: 2
 site_url: http://recipes.oregonlive.com/
 display_url: recipes.oregonlive.com

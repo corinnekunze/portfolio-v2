@@ -55,6 +55,14 @@ $(function() {
     },
 	};
 
+  $('.js-scroll-to').on('click', function(event) {
+    var target = $('#' + $(this).data('target'));
+    $('html, body').animate({
+      scrollTop: $(target).offset().top - 50
+    }, 800);
+    event.preventDefault();
+  });
+
 	if ($('.js-fade').length > 0) {
 		$('.js-fade').addClass('is-finished');
 	}

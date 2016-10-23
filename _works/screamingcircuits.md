@@ -1,5 +1,6 @@
 ---
 title: Screaming Circuits
+target: screaming-circuits
 order: 1
 site_url: http://www.screamingcircuits.com
 display_url: www.screamingcircuits.com

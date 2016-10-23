@@ -1,5 +1,6 @@
 ---
 title: TechTown Diversity Survey
+target: techtown
 order: 3
 site_url: https://portlandtechdiversity-survey.herokuapp.com/
 display_url: portlandtechdiversity-survey.herokuapp.com
