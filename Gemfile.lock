@@ -3,8 +3,6 @@ GEM
   specs:
     RedCloth (4.3.2)
     addressable (2.4.0)
-    byebug (9.0.6)
-    coderay (1.1.1)
     colorator (1.1.0)
     daemons (1.2.4)
     eventmachine (1.2.0.1)
@@ -31,19 +29,8 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    method_source (0.8.2)
-    octopress-debugger (1.0.2)
-      jekyll
-      pry-byebug
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    pry (0.10.4)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-byebug (3.4.0)
-      byebug (~> 9.0)
-      pry (~> 0.10)
     rack (1.6.4)
     rack-jekyll (0.4.5)
       jekyll (>= 1.3)
@@ -61,7 +48,6 @@ GEM
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-    slop (3.6.0)
     thin (1.7.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -74,7 +60,6 @@ PLATFORMS
 DEPENDENCIES
   RedCloth (~> 4.3, >= 4.3.2)
   jekyll (~> 3.3)
-  octopress-debugger
   rack-jekyll (~> 0.4.5)
   sinatra (~> 1.4, >= 1.4.7)
   thin (~> 1.7)
