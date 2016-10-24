@@ -63,6 +63,7 @@ p, .p {
 
 a {
 	color: $blue;
+	cursor: pointer;
 	@include transition(color, 300ms, ease);
 	text-decoration: none;
 	&:hover {
