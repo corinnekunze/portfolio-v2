@@ -7,9 +7,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-body {
-	background-color: #000;
-}
 
 .font--white {
 	color: $white;
@@ -89,8 +86,12 @@ a {
 // Site Styles
 // ===============
 body {
-	background: url("/assets/images/oregonwood-dark.jpg") no-repeat center center fixed;
+	background-image: url("/assets/images/oregonwood-dark.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 	background-size: cover;
+	background-color: #000;
 	overflow-x: hidden;
 }
 .background--white {
