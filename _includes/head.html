@@ -11,7 +11,15 @@
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<meta property="og:url" content="http://www.corinnekunze.com">
+
+  <meta itemprop="name" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta itemprop="image" content="http://www.corinnekunze.com/assets/images/corinne-meta-image.jpg">
+  <meta property="og:image" content="http://www.corinnekunze.com/assets/images/corinne-meta-image.jpg" />
+  <meta name="twitter:image:src" content="http://www.corinnekunze.com/assets/images/corinne-meta-image.jpg">
+	
+  <meta property="og:url" content="http://www.corinnekunze.com">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@corinnekunze">
 
