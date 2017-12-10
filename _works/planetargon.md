@@ -1,7 +1,7 @@
 ---
 title: Planet Argon Website
 target: planet-argon
-order: 4
+order: 5
 site_url: https://www.planetargon.com
 display_url: planetargon.com
 skills: Javascript, Front-End Development, Ruby on Rails Development

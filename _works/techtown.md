@@ -1,7 +1,7 @@
 ---
 title: TechTown Diversity Survey
 target: techtown
-order: 3
+order: 4
 site_url: https://portlandtechdiversity-survey.herokuapp.com/
 display_url: portlandtechdiversity-survey.herokuapp.com
 skills: Javascript, Chartist.JS, Ruby, CSS Animation

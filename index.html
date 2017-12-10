@@ -35,9 +35,9 @@ layout: default
 							<a href="https://twitter.com/corinnekunze"><i class="h3 fa fa-twitter"></i></a>
 						</div>
 					</div>
-					<h3 class="audiowide font--white">Problem solver, javascript enthusiast, accomplished Front-End Developer.</h3>
+					<h3 class="audiowide font--white">Problem solver, javascript enthusiast, accomplished full stack developer.</h3>
 					<p class="font--gray margin-top-sm h6">I like building things and solving problems.</p>
-					<p class="margin-top-sm font--gray h6">Some may describe me as an accomplished <a class="highlight js-scroll-to" data-target="work">Front-end Developer</a>, but I also work in full stack development. That inclues tackling code on the back-end as well as being an integral part of user experience or visual designs. I am experienced with building large scale, complex applications in frameworks such as <a class="highlight js-scroll-to" data-target="oregonian">Ruby on Rails</a>, <a class="highlight js-scroll-to" data-target="screaming-circuits">Ember.js</a>, and BackboneJS.
+					<p class="margin-top-sm font--gray h6">My current role would be best described as <a class="highlight js-scroll-to" data-target="work">Full Stack Developer</a>. That inclues tackling code on the back-end as well as being the lead on the front-end of an application. My educational background is in design so I have also been an integral part of design and visual processes in the past. I am experienced with building large scale, complex applications in frameworks such as <a class="highlight js-scroll-to" data-target="oregonian">Ruby on Rails</a>, <a class="highlight js-scroll-to" data-target="screaming-circuits">Ember.js</a>, and <a class="highlight js-scroll-to" data-target="pacglobal">React</a>.
 
 					<p class="margin-top-sm font--gray h6">I am driven to build great experiences whilst writing code with an ethos of code legibility
 and simplicity.</p>
@@ -77,12 +77,13 @@ and simplicity.</p>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row margin-top-lg">
-				<div class="twelve col-centered columns">
-					<img src="{{work.hero_img}}" alt="{{work.title}}" class="full-width border--bottom border--top work--hero">
+			{% unless work.hero_img == null %}
+				<div class="row margin-top-lg">
+					<div class="twelve col-centered columns">
+						<img src="{{work.hero_img}}" alt="{{work.title}}" class="full-width border--bottom border--top work--hero">
+					</div>
 				</div>
-			</div>
+			{% endunless %}
 			
 			<div class="row margin-top-md">
 				<div class="ten col-centered columns">
