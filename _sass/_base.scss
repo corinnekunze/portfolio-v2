@@ -2,257 +2,261 @@
 // Typography
 // ===============
 * {
-	font-family: $source-sans;
-	line-height: 1.4;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: $source-sans;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .font--white {
-	color: $white;
+  color: $white;
 }
 .font--gray {
-	color: $gray;
+  color: $gray;
 }
 h1, .h1 {
-	font-size: 62px;
-	line-height: 1;
-	@media only screen and (max-width: $md-breakpoint) {
-		font-size: 30px;
-	}
+  font-size: 62px;
+  line-height: 1;
+  @media only screen and (max-width: $md-breakpoint) {
+    font-size: 30px;
+  }
 }
 
 h2, .h2 {
-	font-size: 36px;
-	@media only screen and (max-width: $md-breakpoint) {
-		font-size: 28px;
-	}
+  font-size: 36px;
+  @media only screen and (max-width: $md-breakpoint) {
+    font-size: 28px;
+  }
 }
 
 h3, .h3 {
-	font-size: 26px;
-	@media only screen and (max-width: $md-breakpoint) {
-		font-size: 20px;
-	}
+  font-size: 26px;
+  @media only screen and (max-width: $md-breakpoint) {
+    font-size: 20px;
+  }
 }
 
 h4, .h4 {
-	font-size: 24px;
-	@media only screen and (max-width: $md-breakpoint) {
-		font-size: 18px;
-	}
+  font-size: 24px;
+  @media only screen and (max-width: $md-breakpoint) {
+    font-size: 18px;
+  }
 }
 
 h5, .h5 {
-	font-size: 22px;
-	@media only screen and (max-width: $md-breakpoint) {
-		font-size: 18px;
-	}
+  font-size: 22px;
+  @media only screen and (max-width: $md-breakpoint) {
+    font-size: 18px;
+  }
 }
 
 h6, .h6 {
-	font-size: 18px;
-	@media only screen and (max-width: $md-breakpoint) {
-		font-size: 16px;
-	}
+  font-size: 18px;
+  @media only screen and (max-width: $md-breakpoint) {
+    font-size: 16px;
+  }
 }
 
 p, .p {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 a {
-	color: $blue;
-	cursor: pointer;
-	@include transition(color, 300ms, ease);
-	text-decoration: none;
-	&:hover {
-		color: $white;
-	}
+  color: $blue;
+  cursor: pointer;
+  @include transition(color, 300ms, ease);
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
 }
 .link--black {
-	color: $black;
-	&:hover {
-		color: #000;
-	}
+  color: $black;
+  &:hover {
+    color: #000;
+  }
 }
 .link--aqua {
-	color: $aqua;
-	&:hover {
-		color: #000;
-	}
+  color: $aqua;
+  &:hover {
+    color: #000;
+  }
 }
 // ===============
 // Site Styles
 // ===============
 body {
-	background-image: url("/assets/images/oregonwood-dark.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #000;
-	overflow-x: hidden;
+  background-image: url("/assets/images/oregonwood-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000;
+  overflow-x: hidden;
+  @media only screen and (max-width: $md-breakpoint) {
+    background-size: auto;
+    background-position: initial;
+  }
 }
 .background--white {
-	background-color: $white;
-	position: relative;
+  background-color: $white;
+  position: relative;
 }
 .background--black, %background--black {
-	background-color: rgba(#000, 0.95);
+  background-color: rgba(#000, 0.95);
 }
 .background--gray {
-	background-color: rgba(#ccc, 0.2);
+  background-color: rgba(#ccc, 0.2);
 }
 .section {
-	height: 100vh;
-	position: relative;
-	@media only screen and (max-width: $sm-breakpoint) {
-		height: auto;
-		margin-bottom: 60px;
-	}
+  height: 100vh;
+  position: relative;
+  @media only screen and (max-width: $sm-breakpoint) {
+    height: auto;
+    margin-bottom: 60px;
+  }
 }
 hr {
-	margin: 5px 0px;
+  margin: 5px 0px;
 }
 .highlight {
-	color: $white;
-	cursor: pointer;
-	position: relative;
-	font-weight: 700;
-	&:after {
-		@include transition(all, 250ms, ease);
-		content: "";
-		background-color: $blue;
-		position: absolute;
+  color: $white;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+  &:after {
+    @include transition(all, 250ms, ease);
+    content: "";
+    background-color: $blue;
+    position: absolute;
     width: 102%;
     top: 50%;
     height: 50%;
     left: -2px;
     z-index: -1;
-	}
-	&:hover {
-		&:after {
-			background-color: $black;
-			height: 0%;
-			top: 100%;
-		}
-	}
+  }
+  &:hover {
+    &:after {
+      background-color: $black;
+      height: 0%;
+      top: 100%;
+    }
+  }
 }
 .effect--underline {
-	position: relative;
-	&:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-		border-bottom: 1px solid #000;
-		@include transition(width, 0.2s, linear);
-	}
-	&:hover {
-		&:after {
-			width: 100%;
-		}
-	}
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+    @include transition(width, 0.2s, linear);
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
 }
 // ===============
-//	Special FX
+//  Special FX
 // ===============
 .js-fade {
-	opacity: 0;
-	@include transition(opacity, 2s, ease);
+  opacity: 0;
+  @include transition(opacity, 2s, ease);
 }
 .is-finished {
-	opacity: 1;
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 @keyframes hover {
-	from {
-		// top: 0;
-		opacity: 1;
-	}
-	to {
-		// top: 8px;
-		opacity: .4;
-	}
+  from {
+    // top: 0;
+    opacity: 1;
+  }
+  to {
+    // top: 8px;
+    opacity: .4;
+  }
 }
 // ===============
 // Header & Footer
 // ===============
 .header {
-	@include transition(all, 0.2s, linear);
-	@extend %background--black;
-	border-bottom: 1px solid rgba($neon, 0.7);
-	color: $white;
-	position: fixed;
-	top: -40px;
-	width: 100%;
-	opacity: 0;
-	z-index: 2;
+  @include transition(all, 0.2s, linear);
+  @extend %background--black;
+  border-bottom: 1px solid rgba($neon, 0.7);
+  color: $white;
+  position: fixed;
+  top: -40px;
+  width: 100%;
+  opacity: 0;
+  z-index: 2;
 }
 .up {
-	opacity: 1;
-	top: 0px;
+  opacity: 1;
+  top: 0px;
 }
 footer {
-	@extend %background--black;
-	color: $white;
+  @extend %background--black;
+  color: $white;
 }
 // ===============
 // Page Styles
 // ===============
 .introduction {
-	padding-top: 250px;
-	@media only screen and (max-width: $sm-breakpoint) {
-		padding: 150px 0px;
-	}
+  padding-top: 250px;
+  @media only screen and (max-width: $sm-breakpoint) {
+    padding: 150px 0px;
+  }
 }
 .introduction--headline {
-	position: relative;
-	&:before, &:after {
-		content: "";
-		position: absolute;
-		top: 50%;
-		margin-top: -1px;
-		border-bottom: 1px solid $blue;
-		width: 52%;
-	}
-	&:before {
-		left: -53%;
-	}
-	&:after {
-		right: -53%;
-	}
-	@media only screen and (max-width: $md-breakpoint)    {
-		font-size: 30px;
-	}
+  position: relative;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    border-bottom: 1px solid $blue;
+    width: 52%;
+  }
+  &:before {
+    left: -53%;
+  }
+  &:after {
+    right: -53%;
+  }
+  @media only screen and (max-width: $md-breakpoint)    {
+    font-size: 30px;
+  }
 }
 .arrow-down {
-	@include transition(top, 0.2s, linear);
-	animation: hover 900ms infinite;
-	animation-direction: alternate;
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	position: relative;
-	margin-top: 40px;
-	font-size: 18px;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 85%;
-	&:after {
-		content: "\f103";
-		color: $white;
-		top: 5px;
-		left: 0;
-	}
+  @include transition(top, 0.2s, linear);
+  animation: hover 900ms infinite;
+  animation-direction: alternate;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  position: relative;
+  margin-top: 40px;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 85%;
+  &:after {
+    content: "\f103";
+    color: $white;
+    top: 5px;
+    left: 0;
+  }
 }
 .work--hero {
-	@media only screen and (max-width: $sm-breakpoint)    {
-		border: 1px solid #ccc;
-	}
+  @media only screen and (max-width: $sm-breakpoint)    {
+    border: 1px solid #ccc;
+  }
 }
 // ===============
 // Skeleton Overrides
@@ -266,6 +270,6 @@ footer {
     margin: 0 auto;
   }  
   .ten.columns {
-		width: 82.66667%;
-	}  
+    width: 82.66667%;
+  }  
 }

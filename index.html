@@ -3,100 +3,100 @@ layout: default
 ---
 
 <div class="container">
-	<div class="section">
-		<div class="row">
-			<div class="eight columns col-centered">
-				<div class="introduction">
-					<div class="js-fade">
-						<h1 class="uppercase audiowide text-center introduction--headline font--white">Corinne Kunze</h1>
-					</div>
-					<div class="js-fade">
-						<h2 class="h3 audiowide text-center font--gray introduction--sub-head">a web developer with an eye for design, who specializes in building and maintaining complex web applications</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="arrow-down"></div>
-	</div>
-		<div class="section">
-			<div class="row padding-top-xxl">
-				<div class="ten col-centered columns">
-					<div class="text-center margin-bottom-xs">
-						<div class="display--inline-block padding-xxs">
-							<a href="https://github.com/corinnekunze"><i class="h3 fa fa-github"></i></a>
-						</div>
-						<div class="display--inline-block padding-xxs">
-							<a href="mailto:corinnekunze@gmail.com"><i class="h3 fa fa-envelope"></i></a>
-						</div>
-						<div class="display--inline-block padding-xxs">
-							<a href="https://www.linkedin.com/in/corinne-kunze-68224b46"><i class="h3 fa fa-linkedin-square"></i></a>
-						</div>
-						<div class="display--inline-block padding-xxs">
-							<a href="https://twitter.com/corinnekunze"><i class="h3 fa fa-twitter"></i></a>
-						</div>
-					</div>
-					<h3 class="audiowide font--white">Problem solver, javascript enthusiast, accomplished full stack developer.</h3>
-					<p class="font--gray margin-top-sm h6">I like building things and solving problems.</p>
-					<p class="margin-top-sm font--gray h6">My current role would be best described as <a class="highlight js-scroll-to" data-target="work">Full Stack Developer</a>. That inclues tackling code on the back-end as well as being a leader on the front-end. My educational background is in design so I have also been an integral part of design and visual processes in the past. I am experienced with building feature rich, complex applications in frameworks such as <a class="highlight js-scroll-to" data-target="oregonian">Ruby on Rails</a>, <a class="highlight js-scroll-to" data-target="screaming-circuits">Ember.js</a>, and <a class="highlight js-scroll-to" data-target="pacglobal">React</a>.
+  <div class="section">
+    <div class="row">
+      <div class="eight columns col-centered">
+        <div class="introduction">
+          <div class="js-fade">
+            <h1 class="uppercase audiowide text-center introduction--headline font--white">Corinne Kunze</h1>
+          </div>
+          <div class="js-fade">
+            <h2 class="h3 audiowide text-center font--gray introduction--sub-head">a web developer with an eye for design, who specializes in building and maintaining complex web applications</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-down"></div>
+  </div>
+    <div class="section">
+      <div class="row padding-top-xxl">
+        <div class="ten col-centered columns">
+          <div class="text-center margin-bottom-xs">
+            <div class="display--inline-block padding-xxs">
+              <a href="https://github.com/corinnekunze"><i class="h3 fa fa-github"></i></a>
+            </div>
+            <div class="display--inline-block padding-xxs">
+              <a href="mailto:corinnekunze@gmail.com"><i class="h3 fa fa-envelope"></i></a>
+            </div>
+            <div class="display--inline-block padding-xxs">
+              <a href="https://www.linkedin.com/in/corinne-kunze-68224b46"><i class="h3 fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="display--inline-block padding-xxs">
+              <a href="https://twitter.com/corinnekunze"><i class="h3 fa fa-twitter"></i></a>
+            </div>
+          </div>
+          <h3 class="audiowide font--white">Problem solver, javascript enthusiast, accomplished full stack developer.</h3>
+          <p class="font--gray margin-top-sm h6">I like building things and solving problems.</p>
+          <p class="margin-top-sm font--gray h6">My current role would be best described as <a class="highlight js-scroll-to" data-target="work">Full Stack Developer</a>. That inclues tackling code on the back-end as well as being a leader on the front-end. My educational background is in design so I have also been an integral part of design and visual processes in the past. I am experienced with building feature rich, complex applications in frameworks such as <a class="highlight js-scroll-to" data-target="oregonian">Ruby on Rails</a>, <a class="highlight js-scroll-to" data-target="screaming-circuits">Ember.js</a>, and <a class="highlight js-scroll-to" data-target="pacglobal">React</a>.
 
-					<p class="margin-top-sm font--gray h6">I am driven to build great experiences whilst writing code with an ethos of code legibility
+          <p class="margin-top-sm font--gray h6">I am driven to build great experiences whilst writing code with an ethos of code legibility
 and simplicity.</p>
 
-					<p class="margin-top-sm font--gray h6">I'm currently working as a web developer for <a href="https://www.planetargon.com" target="_blank" class="highlight">Planet Argon</a>, a design and development agency in Portland, Oregon.</p>
-				</div>
-			</div>
-		</div>
+          <p class="margin-top-sm font--gray h6">I'm currently working as a web developer for <a href="https://www.planetargon.com" target="_blank" class="highlight">Planet Argon</a>, a design and development agency in Portland, Oregon.</p>
+        </div>
+      </div>
+    </div>
 </div>
 <!-- <div class="background--white font--black padding-top-md padding-bottom-md"> -->
-	<div class="container">
-		<div class="row" id="work">
-			<div class="twelve col-centered columns">
-				<h2 class="audiowide font--white">Selected Work</h2>
-				<!-- <hr> -->
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row" id="work">
+      <div class="twelve col-centered columns">
+        <h2 class="audiowide font--white">Selected Work</h2>
+        <!-- <hr> -->
+      </div>
+    </div>
+  </div>
 <div class="container--for-medium">
-	{% assign portfolio = site.works | sort: 'order' %}
-	{% for work in portfolio %}
-		<div class="background--white padding-top-md padding-bottom-md margin-top-xl" id={{work.target}}>
-			<div class="row margin-top-md">
-				<div class="ten col-centered columns">
-					<h3 class="audiowide">{{work.title}}</h3>
-					<p class="h6"><a href="{{work.site_url}}" target="_blank" class="link--aqua effect--underline">{{work.display_url}}</a></p>
-					<p><span class="font-weight--bold">Relevant Skills:</span> {{work.skills}}</p>
-				</div>
-			</div>
-			<div class="row margin-top-md">
-				<div class="ten col-centered columns">
-					<div class="six columns margin-bottom-sm">
-						<p>{{work.paragraph_1}}</p>
-					</div>
-					<div class="six columns">
-						<p>{{work.paragraph_2}}</p>
-					</div>
-				</div>
-			</div>
-			{% unless work.hero_img == null %}
-				<div class="row margin-top-lg">
-					<div class="twelve col-centered columns">
-						<img src="{{work.hero_img}}" alt="{{work.title}}" class="full-width border--bottom border--top work--hero">
-					</div>
-				</div>
-			{% endunless %}
-			
-			<div class="row margin-top-md">
-				<div class="ten col-centered columns">
-					<div class="six columns">
-						<img src="{{work.first_image}}" alt="{{work.first_image_alt}}" class="full-width border--all margin-bottom-md">
-					</div>
-					<div class="six columns">
-						<img src="{{work.second_image}}" alt="{{work.second_image_alt}}" class="full-width border--all">
-					</div>
-				</div>
-			</div>
-		</div>
-	{% endfor %}
+  {% assign portfolio = site.works | sort: 'order' %}
+  {% for work in portfolio %}
+    <div class="background--white padding-top-md padding-bottom-md margin-top-xl" id={{work.target}}>
+      <div class="row margin-top-md">
+        <div class="ten col-centered columns">
+          <h3 class="audiowide">{{work.title}}</h3>
+          <p class="h6"><a href="{{work.site_url}}" target="_blank" class="link--aqua effect--underline">{{work.display_url}}</a></p>
+          <p><span class="font-weight--bold">Relevant Skills:</span> {{work.skills}}</p>
+        </div>
+      </div>
+      <div class="row margin-top-md">
+        <div class="ten col-centered columns">
+          <div class="six columns margin-bottom-sm">
+            <p>{{work.paragraph_1}}</p>
+          </div>
+          <div class="six columns">
+            <p>{{work.paragraph_2}}</p>
+          </div>
+        </div>
+      </div>
+      {% unless work.hero_img == null %}
+        <div class="row margin-top-lg">
+          <div class="twelve col-centered columns">
+            <img src="{{work.hero_img}}" alt="{{work.title}}" class="full-width border--bottom border--top work--hero">
+          </div>
+        </div>
+      {% endunless %}
+      
+      <div class="row margin-top-md">
+        <div class="ten col-centered columns">
+          <div class="six columns">
+            <img src="{{work.first_image}}" alt="{{work.first_image_alt}}" class="full-width border--all margin-bottom-md">
+          </div>
+          <div class="six columns">
+            <img src="{{work.second_image}}" alt="{{work.second_image_alt}}" class="full-width border--all">
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 
