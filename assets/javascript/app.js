@@ -42,13 +42,10 @@ $(function() {
         // scroll down
         // $('.header').addClass('up');
         $('.header').removeClass('up');
-        
+
       }
       else {
         $('.header').addClass('up');
-
-        // scroll up
-        // $('.header').removeClass('up');
       }
 
       this.scrollPos = curPos;
@@ -70,6 +67,9 @@ $(function() {
   $('.js-scroll-top').on('click', function() {
     $("html, body").animate({ scrollTop: "0px" });
   });
+
+  $('.js-current-year').html(new Date().getFullYear());
+
 	// Initalizers
 	navigation.init();
 });
