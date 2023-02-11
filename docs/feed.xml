@@ -4,10 +4,10 @@
     <title>Corinne Kunze - Web Developer With An Eye for Design</title>
     <description>Corinne Kunze is a web developer who strives to create beautiful user experiences as well as logical and maintainable codebases.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Feb 2023 09:01:36 -0800</pubDate>
-    <lastBuildDate>Sat, 11 Feb 2023 09:01:36 -0800</lastBuildDate>
+    <link>http://www.corinnekunze.com/</link>
+    <atom:link href="http://www.corinnekunze.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 11 Feb 2023 09:08:52 -0800</pubDate>
+    <lastBuildDate>Sat, 11 Feb 2023 09:08:52 -0800</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
   </channel>
