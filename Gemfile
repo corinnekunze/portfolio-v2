@@ -1,7 +1,6 @@
 source "https://rubygems.org"
-ruby '2.5.1'
-gem 'jekyll', '~> 3.8', '>= 3.8.5'
+ruby '3.2.1'
+gem 'github-pages'
 gem 'kramdown'
-gem 'rack-jekyll', '~> 0.5.0'
-gem 'rake', '~> 12.3', '>= 12.3.2'
 gem 'puma'
+gem "webrick", "~> 1.8"
